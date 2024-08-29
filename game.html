@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.ico">
+</head>
+<body class="gameCenter">
+    <div id="game" onclick="jump()">
+        <div id="hamburger"><img src="hamburger.gif" width="100px" height="100px"></div>
+        <div id="coke"><img src="coke.gif" width="150px" height="150px"></div>
+        <div id="coin"><img src="coin.gif" width="150px" height="150px"></div>
+        <img class="hamicon" src="hamicon.png" width="50px" height="50px">
+        <img class="hp" src="hp.png" width="150px" height="50px">
+        <img class="name" src="name.png" width="650px" height="150px">
+        <img class="cloud1" src="cloud.png" width="120px" height="80px">
+        <img class="cloud2" src="cloud.png" width="140px" height="100px">
+        <img class="cloud3" src="cloud.png" width="120px" height="80px">
+        <img class="raindrop" src="raindrop.gif" width=1100px height=500px>
+        <img class="floor" src="floor.jpg" width=1100px height=100px>
+        <h1 id="start">Click to Start</h1>
+        <h3>Score: <span id="score"></span></h3>
+    </div>
+    <div class="back-button-container">
+        <button class="back-button" onclick="history.back()">Back</button>
+    </div>
+    <audio id="jumpSound">
+        <source src="jumpSound.m4a" type="audio/mpeg"></audio>
+        <audio id="hitSound">
+            <source src="hitSound.m4a" type="audio/mpeg"></audio>
+        <audio id="gameMusic" loop>
+            <source src="gameMusic.mp3" type="audio/mpeg">
+        </audio>
+<script src="game.js"></script>
+</body>
+</html>

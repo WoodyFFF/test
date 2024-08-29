@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburglar - Gathering</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>        <!--https://boxicons.com/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo"><img src="./images/logo.png"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+            </ul>
+            <div class="location">
+                <a href="https://maps.app.goo.gl/Pq6e4fzVGHQsk4Wp8" class="map"> 
+                <h3>Location</h3>
+                <p>8/F<br> Wong Tze Building<br>Hoi Yuen Rd No. 71</p>
+              </a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="dating">
+                <div class="datingVideo"><video autoplay>
+                    <source src="datingVideo.mp4" type="video/mp4"></video></div>
+                <div class="datingName"><img src="./images/datingName.png" width=800px heigh=100px></div>
+                <div class="datecard">
+                <button id="bassLeft"><i class="fa-solid fa-circle-left"></i></button>
+                <img id="bassImage" src="./images/bass1.jpg" width=800px height=450px>
+                <span><h3>DueBass</h3>
+                <p>
+                <br>Age: 25
+                <br>Height: 5'8"
+                <br>Weight: 120lbs
+                <br>Interest: Hiking, Gaming, Singing
+                <br>Favorite Food: Sushi, Pizza
+                </p></span>
+                <button id="bassRight"><i class="fa-solid fa-circle-right"></i></button>
+                </div>
+                <div class="datecard">
+                    <button id="marcoLeft"><i class="fa-solid fa-circle-left"></i></button>
+                    <span><h3>Marco</h3>
+                    <p>
+                    <br>Age: 23
+                    <br>Height: 5'10"
+                    <br>Weight: 150lbs
+                    <br>Interest: Gaming, Reading, Swimming
+                    <br>Favorite Food: Spaghetti, Tacos
+                    </p></span>
+                    <img id="marcoImage" src="./images/marco1.jpg" width=800px height=450px>
+                    <button id="marcoRight"><i class="fa-solid fa-circle-right"></i></button>
+                    </div>
+                    <div class="select-container">
+                    <div class="chat-header">Pick Your Interests, Favorites and Personality</div>
+                    <div class="interest-buttons">
+                        <button data-interest="tech">Tech</button>
+                        <button data-interest="business">Business</button>
+                        <button data-interest="design">Design</button>
+                        <button data-interest="marketing">Marketing</button>
+                        <button data-interest="running">running</button>
+                        <button data-interest="swimming">swimming</button>
+                        <button data-interest="gaming">gaming</button>
+                        <button data-interest="reading">reading</button>
+                        <button data-interest="cooking">cooking</button>
+                        <button data-interest="travel">travel</button>
+                        <button data-interest="music">music</button>
+                        <button data-interest="art">art</button>
+                        <button data-interest="fitness">fitness</button>
+                        <button data-interest="sports">sports</button>
+                        <button data-interest="hiking">hiking</button>
+                        <button data-interest="photography">photography</button>
+                        <button data-interest="fashion">fashion</button>
+                        <button data-interest="food">food</button>
+                        <button data-interest="movies">movies</button>
+                        <button data-interest="music">music</button>
+                        <button data-interest="books">books</button>
+                        <button data-interest="pets">pets</button>
+                        <button data-interest="technology">technology</button>
+                        <button data-interest="politics">politics</button>
+                        <button data-interest="science">science</button>
+                        <button data-interest="history">history</button>
+                        <button data-interest="religion">religion</button>
+                        <button data-interest="philosophy">philosophy</button>
+                        <button data-interest="sushi">sushi</button>
+                        <button data-interest="tacos">tacos</button>
+                        <button data-interest="pizza">pizza</button>
+                        <button data-interest="steak">steak</button>
+                        <button data-interest="chicken">chicken</button>
+                        <button data-interest="vegan">vegan</button>
+                        <button data-interest="caring">caring</button>
+                        <button data-interest="funny">funny</button>
+                        <button data-interest="romantic">romantic</button>
+                        <button data-interest="adventurous">adventurous</button>
+                        <button data-interest="outgoing">outgoing</button>
+                        <button data-interest="shy">shy</button>
+                        <button data-interest="athletic">athletic</button>
+                        <button data-interest="dance">dance</button>
+                        <button data-interest="theater">theater</button>
+                        <button data-interest="INFJ">INFJ</button>
+                        <button data-interest="INFP">INFP</button>
+                        <button data-interest="INTJ">INTJ</button>
+                        <button data-interest="INTP">INTP</button>
+                        <button data-interest="ENFJ">ENFJ</button>
+                        <button data-interest="ENFP">ENFP</button>
+                        <button data-interest="ENTJ">ENTJ</button>
+                        <button data-interest="ENTP">ENTP</button>
+                        <button data-interest="ESFJ">ESFJ</button>
+                        <button data-interest="ESFP">ESFP</button>
+                        <button data-interest="ESTJ">ESTJ</button>
+                        <button data-interest="ESTP">ESTP</button>
+                        <button data-interest="ISFJ">ISFJ</button>
+                        <button data-interest="ISFP">ISFP</button>
+                        <button data-interest="ISTJ">ISTJ</button>
+                        <button data-interest="ISTP">ISTP</button>
+                    </div>
+                    <div class="submit-button">
+                    <button class="submit-button">Submit and Match with Your Mayo</button>
+                    </div>
+                    </div>
+                    <div class="chat-container">
+                        <div class="chat-header">Online Chat with Your Mayo</div>
+                        <div class="chat-messages">
+                        <div class="chat-message bot">
+                            <div class="chatter-icon"><i class="fa-solid fa-user-pen"></i></div>
+                            <div class="chatter-name">DueBass</div>
+                            <div>Hello, how are you today?</div>
+                        </div>
+                        <div class="chat-message user">
+                            <div>Hi there! I am fine and nice to meet you.</div>
+                            <div class="chatter-icon"><i class="fa-solid fa-user-check"></i></div>
+                            <div class="chatter-name">Marco</div>
+                        </div>
+                        <div class="chat-message bot">
+                            <div class="chatter-icon"><i class="fa-solid fa-user-pen"></i></div>
+                            <div class="chatter-name">DueBass</div>
+                            <div>Any plans today? Wanna have some burgers and chill outside?</div>
+                        </div>
+                        <div class="chat-message user">
+                            <div>Sounds good idea!!</div>
+                            <div class="chatter-icon"><i class="fa-solid fa-user-check"></i></div>
+                            <div class="chatter-name">Marco</div>
+                          </div>
+                          <div class="chat-message bot">
+                            <div class="chatter-icon"><i class="fa-solid fa-user-pen"></i></div>
+                            <div class="chatter-name">DueBass</div>
+                            <div>Great! Let's meet at 5pm at the park.</div>
+                          </div>
+                      </div>
+                      <div class="chat-input">
+                          <input type="text" class="chat-inputs" placeholder="Type your message..." />
+                          <button class="chat-input-button">Send</button>
+                      </div>
+                      </div>
+                </div>
+                    <audio id="datingMusic" loop>
+                        <source src="datingMusic.mp3" type="audio/mp3"></audio>
+                        <div class="back-button-container">
+                            <button class="back-button" onclick="history.back()">Back</button>
+                        </div>
+        </main>
+    </div>
+
+    
+
+    <script src="dating.js"></script>
+</body>
+</html>

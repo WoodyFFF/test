@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburglar - Event</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="charity.css"/>
+    <link rel="stylesheet" href="event.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<div class="charity">
+    <div class="container">
+        <div class="video-container">
+        <span class="charityVideo"><video id ="charityVideo" autoplay>
+            <source src="charityVideo.mp4" type="video/mp4"></video></span>
+        <span class="charityImg0"><img src="charityImg0.jpeg" width=555px heigh=655px></span>
+        </div>
+        <div class="col-sm-12 m-auto">
+            <div id="slider1" class="carousel slide mb-5" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#slider1" data-slide-to="0" class="active"></li>
+                    <li data-target="#slider1" data-slide-to="1"></li>
+                    <li data-target="#slider1" data-slide-to="2"></li>
+                    <li data-target="#slider1" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block fluid" src="charityImg1.jpg" alt="First slide" width=1120px height=630px>
+                        <div class="carousel-caption d-none d-md-block text-info bg-light bg-gradient">
+                            <h5>Food Donation and Distribution</h5>
+                            <p>A critical volunteer service that helps address food insecurity in local communities.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block fluid" src="charityImg2.jpeg" alt="Second slide" width=1120px height=630px>
+                        <div class="carousel-caption d-none d-md-block text-info bg-light bg-gradient">
+                            <h5>Volunteer Service</h5>
+                            <p>They play a vital role in collecting non-perishable items, sorting and packing food boxes, and delivering supplies to food pantries, soup kitchens, and other organizations that serve individuals and families in need.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block fluid" src="charityImg3.jpg" alt="Third slide" width=1120px height=630px>
+                        <div class="carousel-caption d-none d-md-block text-info bg-light bg-gradient">
+                            <h5>Food to Homeless</h5>
+                            <p>Volunteering to distribute food to the homeless is a rewarding way to make a direct impact on those experiencing homelessness in your local community. Volunteering to feed the homeless is a tangible demonstration of compassion that can transform lives and strengthen the bonds of the community.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block fluid" src="charityImg4.jpg" alt="Third slide" width=1120px height=630px>
+                        <div class="carousel-caption d-none d-md-block text-info bg-light bg-gradient">
+                            <h5>Enthusiastic Volunteers</h5>
+                            <p>This volunteer work ensures that nutritious meals and essential groceries reach the most vulnerable members of the community.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#slider1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#slider1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        <div class="charityDonation">
+        <div class="donation-box">
+            <h2>Donate Now</h2>
+            <div class="donation-options">
+              <button data-amount="10">$10</button>
+              <button data-amount="20">$20</button>
+              <button data-amount="50">$50</button>
+              <button data-amount="100">$100</button>
+            </div>
+            <div class="donation-input">
+              <label for="donation-amount">Other Amount:</label>
+              <input type="number" id="donation-amount" placeholder="Enter an amount" min="1" step="1">
+            </div>
+            <button class="donation-button" onclick="processDonation()">Donate</button>
+        </div><div class="charityTitle"><img src="charityTitle.png" width="700px"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script>
+        function processDonation() {
+      const donationAmount = parseFloat(document.getElementById('donation-amount').value);
+      if (isNaN(donationAmount) || donationAmount < 1) {
+        alert('Please enter a valid donation amount.');
+        return;
+      }
+      alert(`Thank you for your donation of $${donationAmount}!`);
+    }
+    const presetButtons = document.querySelectorAll('.donation-options button');
+        presetButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const amount = parseFloat(button.dataset.amount);
+            document.getElementById('donation-amount').value = amount;
+          });
+        });
+    document.addEventListener('DOMContentLoaded', function() {
+    var charityVideo = document.getElementById('charityVideo');
+    charityVideo.volume = 0.3;
+    charityVideo.play();
+});
+    </script>
+    <main class="event-apply-main">
+        <h1>Apply for an Event</h1>
+        <form id="event-apply-form" class="event-apply-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="">Choose an event</option>
+                    <option value="burger-fest">Burger Fest 2024</option>
+                    <option value="cooking-class">Gourmet Burger Cooking Class</option>
+                    <option value="tasting-night">Craft Beer & Burger Tasting Night</option>
+                    <option value="food-challenge">Ultimate Burger Challenge</option>
+                    <option value="vegan-night">Vegan Burger Night</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Additional Comments:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="apply-button">Apply</button>
+        </form>
+        <div class="back-button-container">
+            <button class="back-button" onclick="history.back()">Back</button>
+        </div>
+    </main>
+    <script src="event.js"></script>
+</div>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hamburglar - Member Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo"><img src="./images/logo.png"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+            </ul>
+            <div class="location">
+                <a href="https://maps.app.goo.gl/Pq6e4fzVGHQsk4Wp8" class="map"> 
+                <h3>Location</h3>
+                <p>8/F<br> Wong Tze Building<br>Hoi Yuen Rd No. 71</p>
+              </a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="loginCenter">
+
+                <div class="container1" id="container1">
+                    <div class="form-container sign-up">
+                        <form>
+                            <h1>Create Account</h1>
+                            <div class="social-icons">
+                                <a href="#" class="icons"><i class='bx bxl-google'></i></a>
+                                <a href="#" class="icons"><i class='bx bxl-facebook'></i></a>
+                                <a href="#" class="icons"><i class='bx bxl-github'></i></a>
+                                <a href="#" class="icons"><i class='bx bxl-linkedin'></i></a>
+                            </div>
+                            <span>Register with E-mail</span>
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Enter E-mail">
+                            <input type="password" placeholder="Enter Password">
+                            <button>Sign Up</button>
+                        </form>
+                    </div>
+            
+            
+                    <div class="form-container sign-in">
+                        <form>
+                            <h1>Sign In</h1>
+                            <div class="social-icons">
+                                <a href="#" class="icons"><i class='bx bxl-google'></i></a>
+                                <a href="#" class="icons"><i class='bx bxl-facebook'></i></a>
+                                <a href="#" class="icons"><i class='bx bxl-github'></i></a>
+                                <a href="#" class="icons"><i class='bx bxl-linkedin'></i></a>
+                            </div>
+                            <span>Login With Email & Password</span>
+                            <input type="email" placeholder="Enter E-mail">
+                            <input type="password" placeholder="Enter Password">
+                            <a href="#">Forget Password?</a>
+                            <button class="signIn"><a href="member.html">Sign In</a></button>
+                        </form>
+                    </div>
+            
+            
+                    <div class="toggle-container">
+                        <div class="toggle">
+                            <div class="toggle-panel toggle-left">
+                                <h1>Welcome To <br>Hamburglar</h1>
+                                <p>Sign in With ID & Passowrd</p>
+                                <button class="hidden" id="login">Sign In</button>
+                            </div>
+                            <div class="toggle-panel toggle-right">
+                                <h1>Hi Hamburglars!</h1>
+                                <p>Join "Hamburglar" to enjoy burgers and gatherings</p>
+                                <button class="hidden" id="register">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                
+            </div>
+            <footer>
+                <ul class="footer-icons">
+                    <li>
+                        <a href="https://www.facebook.com/" class="footer-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/" class="footer-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" class="footer-icon">
+                            <i class="fab fa-youtube"></i>
+                            </a>
+                    </li>
+                </ul>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Hamburglar. All rights reserved.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
